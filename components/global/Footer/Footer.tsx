@@ -8,7 +8,7 @@ function Footer() {
                 </div>
 
                 <Button
-                    color='action'
+                    color='yellow'
                     className='footer_button'
                     size='large'>
                     contact us
