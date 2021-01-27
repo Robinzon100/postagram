@@ -1,0 +1,24 @@
+:root {
+    //! MAIN-COLORS
+    --secondary-dark-blue: #0b6bd7;
+    --primary-blue: #338eff;
+    --secondary-light-blue: #4b9bfe;
+
+
+    --secondary-dark-yellow: #e7b604;
+    --primary-yellow: #ffd703;
+    --secondary-light-yellow: #fce984;
+
+
+    --primary-white: white;
+    --primary-black:#000000;
+
+
+    //*===SIZES
+    --primary-padding: 0vw 7vw;
+    --medium-screen-padding: 0vw 6vw;
+    --small-screen-padding: 0vw 2vw;
+}
+
+$medium-screen:1024px;
+$small-screen:768px;

@@ -1,0 +1,108 @@
+.main_hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+
+    .container {
+        position: relative;
+        z-index: 3;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .content {
+            position: absolute;
+            z-index: 4;
+            margin: 1.8vw 0vw 0vw 7vw;
+            
+            .paragraph,.heading,.btn_container {
+                opacity: 0;
+            }
+            .paragraph {
+                line-height: 161.2%;
+                margin: calc(.5rem + .7vw) 0vw calc(.5rem + 2.3vw) 0vw;
+            }
+        }
+
+        .backgound_video__container {
+            position: relative;
+            z-index: 3;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100%;
+
+
+            &:after,
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0%;
+                z-index: 3;
+            }
+
+            &:after {
+                width: 40%;
+                height: 100%;
+                background: linear-gradient(90deg, #FFFFFF 61.34%, rgba(255, 255, 255, 0) 100%);
+                top: 0%;
+            }
+
+            &:before {
+                width: 100%;
+                height: 38%;
+                background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+                bottom: 0%;
+            }
+
+            video {
+                position: absolute;
+                left: 0;
+                outline: none !important;
+                top: 0;
+                width: 100vw;
+                height: auto;
+                user-select: none;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 1080px) {
+    .main_hero {
+
+
+        .container {
+            flex-direction: column;
+
+            .content {
+                position: relative;
+                width: 100% !important;
+                margin: initial !important;
+                padding: var(--medium-screen-padding) !important;
+
+                .btn {
+                    width: 98% !important;
+                }
+            }
+        }
+
+        .backgound_video__container {
+            height: auto !important;
+            &:after{
+                content: none !important;
+            }
+
+
+            video {
+                position: relative !important;
+            }
+        }
+    }
+
+}
+

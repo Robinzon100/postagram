@@ -1,0 +1,28 @@
+.navigation {
+    width: 100%;
+    padding: var(--primary-padding);
+    // background-color: var(--primary-blue);
+    position: fixed;
+    top: 0 !important;
+    z-index: 999;
+
+    .navigation_container {
+        @include f-c-s;
+        
+        .logo {
+            display: inline-block;
+
+            background: {
+                image: url("/svg/logo.svg");
+                size: contain;
+                position: center;
+                repeat: no-repeat;
+            }
+
+            width: 25rem;
+            height: 20rem;
+            cursor: pointer;
+        }
+    }
+
+}
